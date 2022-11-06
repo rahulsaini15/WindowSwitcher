@@ -34,22 +34,7 @@ function Linkedlist() {
             node.prev.next=node.next;
             node.next.prev=node.prev;
           }
-        // let temp = this.head;
-        // let isTailNode = false;
-
-        // while (temp.next !== node)
-        //     temp = temp.next;
-
-        // if (temp.next === this.tail)
-        //     isTailNode = true;
-
-        // if(!isTailNode){
-        //     temp.next = node.next;
-        //     node.next.prev = temp;
-        // }
-        // else{
-        //     this.tail = this.tail.prev;
-        // }
+       
 
         node.next = this.head;
         this.head.prev = node;
